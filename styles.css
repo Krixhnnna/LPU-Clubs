@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full screen height */
+    line-height: 1.6;
+    background-image: url('photos/main.jpeg'); /* Use your own image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Header */
+header {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #007bff;
+}
+
+/* Home Page Styles */
+.home-hero {
+    flex-grow: 1; /* Makes the hero section expand to fill space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.home-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 12px 24px;
+    backdrop-filter: blur(10px);
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2ch;
+    transition: background-color 0.3s ease;
+}
+
+.home-hero a:hover {
+    background-color: #0056b3;
+}
+.club-card a.button {
+    margin-top: 15px; /* Adjust this value as needed */
+    display: inline-block; /* Ensures it takes the space correctly */
+}
+
+/* Clubs Page - Filterable Cards */
+.filter-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.filter-container {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.591);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.filter-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.club-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.club-card {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.247);
+    color: black; /* Changed from white for better readability */
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.club-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.club-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.club-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.club-card a {
+    margin-top: 10px;
+}
+
+/* Join Page Form Styles */
+.join-form {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.join-form h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.join-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.join-form input,
+.join-form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.join-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Club Details Page Styles */
+.club-detail-container {
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 100px auto; /* Center the container and create space from the top */
+}
+
+.club-logo-detail {
+    width: 150px; /* Adjust size as necessary */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.club-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.club-detail h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.club-detail p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.club-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.club-detail ul li {
+    margin-bottom: 10px;
+}
+
+.club-detail a.button {
+    padding: 12px 24px;
+    backdrop-filter: blur(10px);
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2ch;
+    transition: background-color 0.3s ease;
+}
+
+.club-detail a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 10px 0;
+    color: #2d2d2d;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}

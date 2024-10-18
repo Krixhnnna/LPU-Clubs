@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Clubs - Clubs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">UniClubs</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clubs.html" class="active">Clubs</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <h1>Explore Our Clubs</h1>
+            <div class="filter-container">
+                <label for="filter">Filter by Category:</label>
+                <select id="filter" onchange="filterClubs()">
+                    <option value="all">All</option>
+                    <option value="tech">Tech</option>
+                    <option value="sports">Sports</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="social">Social</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="club-cards-container" id="clubCards">
+            <div class="club-card tech">
+                <img src="photos/untangle.png" class="club-logo">
+                <h2>Untangled</h2>
+                <p>Explore AI, coding, and the latest technology trends.</p>
+                <a href="club-details.html" class="button">Know more!</a>
+            </div>
+            <div class="club-card sports">
+                <img src="photos/shoutoutlpu.png" class="club-logo">
+                <h2>Shoutout LPU</h2>
+                <p>Join football, basketball, and many other sports activities.</p>
+                <a href="club-details.html" class="button">Know more!</a>
+            </div>
+            <div class="club-card cultural">
+                <img src="photos/apnacollege.png" class="club-logo">
+                <h2>Apna College LPU</h2>
+                <p>Celebrate different cultures through events, music, and art.</p>
+                <a href="club-details.html" class="button">Know more!</a>
+            </div>
+            <div class="club-card social">
+                <img src="photos/sanguine.png" class="club-logo">
+                <h2>Sanguine</h2>
+                <p>Be a part of making a difference with various social activities.</p>
+                <a href="club-details.html" class="button">Know more!</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UniClubs | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
