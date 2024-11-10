@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +11,9 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures full screen height */
+    min-height: 100vh; 
     line-height: 1.6;
-    background-image: url('photos/main.jpeg'); /* Use your own image */
+    background: linear-gradient(to right, #6999f2, #8d8d8d);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -23,12 +23,13 @@ body {
 /* Header */
 header {
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(58, 59, 60, 0.484);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     top: 0;
     z-index: 1000;
     position: fixed;
+    color:#61dafb;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav {
 .logo {
     font-weight: 600;
     font-size: 1.8rem;
-    color: #007bff;
+    color: #61dafb;
 }
 
 .nav-links {
@@ -57,19 +58,18 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: #dcdcdc;
     font-weight: 400;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-    color: #007bff;
+    color: #61dafb;
 }
 
-/* Home Page Styles */
 .home-hero {
-    flex-grow: 1; /* Makes the hero section expand to fill space */
+    flex-grow: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,8 +91,8 @@ nav {
 .button {
     padding: 12px 24px;
     backdrop-filter: blur(10px);
-    background-color: #007bff;
-    color: #fff;
+    background-color:#61dafb;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     border-radius: 2ch;
@@ -100,14 +100,14 @@ nav {
 }
 
 .home-hero a:hover {
-    background-color: #0056b3;
+    background-color: #b0e9f8;
 }
 .club-card a.button {
-    margin-top: 15px; /* Adjust this value as needed */
-    display: inline-block; /* Ensures it takes the space correctly */
+    margin-top: 15px; 
+    display: inline-block; 
 }
 
-/* Clubs Page - Filterable Cards */
+
 .filter-section {
     text-align: center;
     margin-top: 100px;
@@ -129,7 +129,9 @@ nav {
     border-radius: 5px;
     font-size: 1rem;
 }
-
+.clublinks a {
+    color: rgb(0, 208, 255);
+}
 .club-cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -139,9 +141,8 @@ nav {
 }
 
 .club-card {
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.247);
-    color: black; /* Changed from white for better readability */
+    background-color: rgba(139, 159, 224, 0.5);
+    color: rgb(255, 255, 255); 
     padding: 20px;
     width: 300px;
     border-radius: 10px;
@@ -151,7 +152,7 @@ nav {
 }
 
 .club-card:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(188, 203, 255, 0.5);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -176,7 +177,6 @@ nav {
     margin-top: 10px;
 }
 
-/* Join Page Form Styles */
 .join-form {
     padding: 100px 20px;
     text-align: center;
@@ -184,13 +184,23 @@ nav {
 
 .join-form h1 {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #61dafb;
     margin-bottom: 40px;
 }
 
 .join-form form {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.join-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical; 
 }
 
 .join-form input,
@@ -204,7 +214,7 @@ nav {
 }
 
 .join-form input[type="submit"] {
-    background-color: #007bff;
+    background-color: #61dafb;
     color: white;
     border: none;
     cursor: pointer;
@@ -212,23 +222,27 @@ nav {
 }
 
 .join-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #61dafb;
 }
 
+.contact-info {
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
 /* Club Details Page Styles */
 .club-detail-container {
     padding: 40px;
     text-align: center;
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(72, 75, 92, 0.85);
     border-radius: 10px;
     max-width: 800px;
-    margin: 100px auto; /* Center the container and create space from the top */
+    margin: 100px auto; 
 }
 
 .club-logo-detail {
-    width: 150px; /* Adjust size as necessary */
-    height: 150px; /* Maintain aspect ratio */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -262,7 +276,7 @@ nav {
 .club-detail a.button {
     padding: 12px 24px;
     backdrop-filter: blur(10px);
-    background-color: #007bff;
+    background-color: #61dafb;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -271,17 +285,114 @@ nav {
 }
 
 .club-detail a.button:hover {
-    background-color: #0056b3;
+    background-color:#61dafb;
+}
+
+.latest-events-container {
+    padding: 100px 20px; 
+    text-align: center;
+}
+
+.latest-events-container h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 40px;
+    color: #61dafb;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px; 
+}
+
+.event-card {
+    background-color: rgba(96, 113, 144, 0.8); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.event-card img {
+    width: 100%;
+    height: 300px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+}
+
+.event-card h2 {
+    font-size: 1.5rem; 
+    margin: 10px 0;
+}
+
+.event-card p {
+    font-size: 1rem; 
+    color: #dcdcdc; 
+    margin-top: 5px; 
+}
+
+.tclublinks p {
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.708);
+    background-color: rgba(58, 59, 60, 0.484);
     padding: 10px 0;
-    color: #2d2d2d;
+    color: #ffffff;
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-top: auto; /* Ensures the footer stays at the bottom */
+    margin-top: auto; 
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(186, 255, 255);
+}
+
+.gallery-container {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.gallery-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #61dafb;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); 
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
 }
