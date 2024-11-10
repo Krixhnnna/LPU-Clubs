@@ -1,4 +1,4 @@
-// Basic form validation for Join a Club form
+
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
 
@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (!name || !email || !club) {
             alert("Please fill out all fields!");
-            event.preventDefault();  // Prevent form submission
+            event.preventDefault();  
         } else {
             alert(`Successfully joined ${club}!`);
         }
     });
 });
 
-// Toggle mobile menu visibility (if you have a mobile version with a hamburger menu)
+
 function toggleMenu() {
     const nav = document.querySelector("nav");
     nav.classList.toggle("active");
@@ -32,7 +32,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Function to filter the club cards by category
+
 function filterClubs() {
     const filterValue = document.getElementById("filter").value;
     const clubs = document.querySelectorAll(".club-card");
